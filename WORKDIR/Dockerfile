@@ -1,4 +1,6 @@
-FROM nginx
-WORKDIR /usr/share/nginx/html/
-RUN echo "this is from workdir" > index.html
-CMD ["nginx", "-g", "daemon off;"]
+FROM almalinux:9
+RUN mkdir /app
+WORKDIR /app 
+#setup the pwd
+RUN pwd
+CMD ["sleep","100"]
