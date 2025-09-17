@@ -1,4 +1,4 @@
 FROM nginx
 RUN rm -rf /usr/share/nginx/html/index.html
-ADD https://gist.github.com/lillylangtree/b55828fa05ed3470d352 /usr/share/nginx/html
+ADD https://gist.githubusercontent.com/lillylangtree/b55828fa05ed3470d352/raw/3a7183fb56493ca42b5ddeeb73895f5a8cb1d6d3/index.html /usr/share/nginx/html
 CMD [ "nginx" , "-g" , "daemon off;"]
