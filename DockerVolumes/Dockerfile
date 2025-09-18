@@ -1,2 +1,2 @@
 FROM nginx
-CMD ["nginx","-g","daemon off;"]
+CMD [ "nginx" , "-g" , "daemon off;"]
